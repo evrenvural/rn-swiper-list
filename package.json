@@ -1,7 +1,7 @@
 {
-  "name": "rn-swiper-list",
-  "version": "2.0.2",
-  "description": "⚡ Lightning fast and customizable tinder-like swipe card for React Native",
+  "name": "rn-swiper-list-active",
+  "version": "1.0.0",
+  "description": "A fork of the original library with additional features.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/src/index.d.ts",
@@ -43,7 +43,7 @@
     "type": "git",
     "url": "git+https://github.com/Skipperlla/rn-swiper-list.git"
   },
-  "author": "Skipperlla <oesmer437@gmail.com> (https://github.com/Skipperlla)",
+  "author": "Skipperlla <oesmer437@gmail.com> (https://github.com/Skipperlla) and evrenvural",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Skipperlla/rn-swiper-list/issues"
