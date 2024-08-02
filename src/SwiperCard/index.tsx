@@ -146,10 +146,12 @@ const SwipeableCard = forwardRef<
       })
       .onUpdate((event) => {
         if (currentActiveIndex.value !== index) return;
-        if (onSwipeActive) runOnJS(onSwipeActive)();
 
         translateX.value = event.translationX;
         translateY.value = event.translationY;
+
+        if (onSwipeActive)
+          runOnJS(onSwipeActive)(translateX.value > 0 ? 'Right' : 'Left');
 
         if (height / 3 < Math.abs(event.translationY)) {
           nextActiveIndex.value = interpolate(

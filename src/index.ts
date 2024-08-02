@@ -26,7 +26,7 @@ export type SwiperOptions<T> = {
   onSwipedAll?: () => void;
   onSwipeStart?: () => void;
   onSwipeEnd?: () => void;
-  onSwipeActive?: () => void;
+  onSwipeActive?: (status: 'Left' | 'Right') => void;
   //* Swipe Animation Props
   disableRightSwipe?: boolean;
   disableLeftSwipe?: boolean;
@@ -59,7 +59,7 @@ export type SwiperCardOptions = {
   onSwipeTop?: (index: number) => void;
   onSwipeBottom?: (index: number) => void;
   onSwipeStart?: () => void;
-  onSwipeActive?: () => void;
+  onSwipeActive?: (status: 'Left' | 'Right') => void;
   onSwipeEnd?: () => void;
   cardStyle?: StyleProp<ViewStyle>;
   disableRightSwipe?: boolean;
