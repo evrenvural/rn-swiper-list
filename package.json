@@ -1,6 +1,6 @@
 {
   "name": "rn-swiper-list-active",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A fork of the original library with additional features.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
