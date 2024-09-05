@@ -15,6 +15,7 @@ export type SwiperCardRefType =
 
 export type SwiperOptions<T> = {
   //* Card Props
+  enabled?: boolean;
   data: T[];
   renderCard: (item: T, index: number) => JSX.Element;
   cardStyle?: StyleProp<ViewStyle>;
@@ -53,6 +54,7 @@ export type SwiperOptions<T> = {
 };
 export type SwiperCardOptions = {
   index: number;
+  enabled?: boolean;
   activeIndex: SharedValue<number>;
   onSwipeRight?: (index: number) => void;
   onSwipeLeft?: (index: number) => void;

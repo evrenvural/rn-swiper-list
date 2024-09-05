@@ -67,6 +67,7 @@ const SwipeableCard = forwardRef<
       onSwipeStart,
       onSwipeActive,
       onSwipeEnd,
+      enabled = true,
     },
     ref
   ) => {
@@ -140,6 +141,7 @@ const SwipeableCard = forwardRef<
     }, [inputRangeX]);
 
     const gesture = Gesture.Pan()
+      .enabled(enabled)
       .onBegin(() => {
         currentActiveIndex.value = Math.floor(activeIndex.value);
         if (onSwipeStart) runOnJS(onSwipeStart)();

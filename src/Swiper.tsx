@@ -41,6 +41,7 @@ const Swiper = <T,>(
     onSwipeStart,
     onSwipeActive,
     onSwipeEnd,
+    enabled = true,
   }: SwiperOptions<T>,
   ref: ForwardedRef<SwiperCardRefType>
 ) => {
@@ -84,6 +85,7 @@ const Swiper = <T,>(
     return (
       <SwiperCard
         key={index}
+        enabled={enabled}
         cardStyle={cardStyle}
         index={index}
         disableRightSwipe={disableRightSwipe}
